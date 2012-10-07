@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields"
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+	
+	<script>
+		function print1() {
+			$('#toPrint').printElement({});
+		}
+	</script>
+	<script type="text/javascript"
+		src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
+		
+	</script>
+	<script type="text/javascript"
+		src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js">
+		
+	</script>
+
+
+	<script type="text/javascript"
+		src="http://github.com/erikzaadi/jQueryPlugins/raw/master/jQuery.printElement/jquery.printElement.min.js">
+		
+	</script>
+	<jsp:directive.page contentType="text/html;charset=UTF-8" />
+	<jsp:output omit-xml-declaration="yes" />
+
+	
+	
+	<div id="toPrint">
+	ID ${dosa.id} <p></p> 
+	NAME ${dosa.name}<p></p>  
+	PRICE	${dosa.price}<p></p> 	
+	
+	  <page:show id="ps_com_springsource_roo_testprint_domain_Dosa" object="${dosa}" path="/dosas" z="fqyuWJkIfkQ3k6jLh6jNn1YwvxU=">
+        <field:display field="name" id="s_com_springsource_roo_testprint_domain_Dosa_name" object="${dosa}" z="7YsAmVQvzCbbiqG4EANov4Xubbc="/>
+        <field:display field="price" id="s_com_springsource_roo_testprint_domain_Dosa_price" object="${dosa}" z="f/qGdoJzCv0xc9WMZYT4M6CJN1o="/>
+    </page:show>
+    
+    
+	</div>
+	<div class="submit">
+
+		<input id="shiftright" name="button1" type="button" value="PRINT" onclick="print1();" /> 
+		
+	 
+	</div>
+
+</div>

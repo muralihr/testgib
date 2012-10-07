@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_springsource_roo_testprint_domain_Dosa" modelAttribute="dosa" path="/dosas" versionField="Version" z="6OPZvCoFhFlUlMflCC+p8NReEPs=">
+        <field:input field="name" id="c_com_springsource_roo_testprint_domain_Dosa_name" min="2" required="true" z="Whpg08vvgdLvbOOOVXUGa71moAc="/>
+        <field:input field="price" id="c_com_springsource_roo_testprint_domain_Dosa_price" validationMessageCode="field_invalid_number" z="hjLaQykO51+19uv+YOBzBAWA3Cc="/>
+    </form:update>
+</div>
